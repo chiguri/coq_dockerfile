@@ -1,6 +1,6 @@
 FROM chiguri/coq_base
 LABEL maintainer "Sosuke Moriguchi"
-ENV CoqVersion=8.6
+ENV CoqVersion=8.7.1
 RUN apt-get update && apt-get upgrade -y && \
   wget https://coq.inria.fr/distrib/$CoqVersion/files/coq-$CoqVersion.tar.gz && \
   tar -xzf coq-$CoqVersion.tar.gz && \
